@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Gabriel Victor && Lucas Silva">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>clinica odontologica - login</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	</head>
+	<body>
+		<div id="content-login">
+				<a id="title" class="popup-content-title">Login</a>
+			    <a id="warning" class="popup-content-title"></a>
+
+				<form action="login.php" method="post">
+					<label for="email">Email:</label>
+					<input type="email" name="email" class="input-text" id="email-logar">
+
+					<label for="senha">Senha:</label>
+					<input type="password" name="senha" class="input-text" id="senha-logar">
+
+					<input type="submit" value="logar" onclick="return logarEmpty();">
+				</form>	
+			</div>
+			
+			<!-- script -->
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/script2.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>

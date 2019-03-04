@@ -1,0 +1,15 @@
+usuarios
+id - var_char(8) - primary key - auto increment
+nome - var_char(30)
+email - var_char(50)
+senha - var_char(20)
+status - var_char(1)
+
+consultas
+id - var_char(8) - primary key - auto increment
+id_usuario - var_char(8)
+consulta - var_char(30)
+horario - var_char(5) 
+dia - var_char(2)
+mes - var_char(15)
+doutor - var_char(8)

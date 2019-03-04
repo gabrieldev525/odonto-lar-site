@@ -1,0 +1,202 @@
+body, html { margin: 0; height: 100%; box-sizing: border-box; }
+
+@media screen and (min-width:1200px){
+	.menu-item { display: inline-block; }
+	.menu-side { display: none; }
+	
+	#content-login { width: 30%; }
+	#content-cadastrar { width: 30%; }
+	
+	/*info content*/
+	.info-content { width: 40%; margin-left: 6.5%; }
+	
+	#content-cadastrar-email input[type="email"] { width: 70%; }
+	#content-cadastrar-email input[type="submit"] { width: 28%; padding: 9px 0; }
+	
+	#ambiente { width: 60%; }
+	#ambiente img { width: 40%; margin: 2% 6% 0 0; }
+	
+	#nossa-equipe .content { margin-left: 1.67%; width: 30%; }
+	#nossa-equipe .photo { width: 40%; }
+	
+	#contato { width: 50%; margin: 3% auto 0; }
+
+	/*perfil*/
+	#perfil-info { width: 30%; float: left;  }
+	#agendamentos { width: 60%;  float: right;  }
+	#perfil-icon { width: 30%; }
+	#deletar-conta {  padding: 4% 6%; }
+	#content-agendar {  width: 30%;  }
+}
+
+@media screen and (max-width:1200px){
+	.menu-item { display: inline-block; }
+	.menu-side { display: none; }
+	
+	#content-login { width: 30%; }
+	#content-cadastrar { width: 30%; }
+	
+	/*info content*/
+	.info-content { width: 40%; margin-left: 6.5%; }
+	
+	#content-cadastrar-email input[type="email"] { width: 70%; }
+	#content-cadastrar-email input[type="submit"] { width: 28%; padding: 9px 0; }
+	
+	#ambiente { width: 60%; }
+	#ambiente img { width: 40%; margin: 2% 6% 0 0; }
+	
+	#nossa-equipe .content { margin-left: 1.67%; width: 30%; }
+	#nossa-equipe .photo { width: 50%; }
+	
+	#contato { width: 70%; margin: 3% auto 0; }
+
+	/*perfil*/
+	#perfil-info { width: 30%; float: left;  }
+	#agendamentos { width: 60%;  float: right;  }
+	#perfil-icon { width: 40%; }
+	#deletar-conta {  padding: 4% 6%; }
+	#content-agendar {  width: 50%;  }
+}
+
+@media screen and (max-width:768px) {
+    #content-login { width: 50%; }
+	#content-cadastrar { width: 40%; }
+	
+    /*info content*/
+	.info-content { width: 40%; margin-left: 6.5%; }
+	
+	#content-cadastrar-email input[type="email"] { width: 70%; }
+	#content-cadastrar-email input[type="submit"] { width: 28%; padding: 9px 0; }
+	
+	#ambiente { width: 80%; }
+	#ambiente img { width: 40%; margin: 2% 6% 0 0; }
+	
+	#nossa-equipe .content { margin-left: 2.5%; width: 45%; }
+	#nossa-equipe .photo { width: 50%; }
+	
+	#contato { width: 90%; margin: 3% auto 0; }
+
+	/*perfil*/
+	#perfil-info { width: 98%; margin-top: 3%; }
+	#agendamentos { width: 98%; margin-top: 4%; }
+	#perfil-icon { width: 20%; }
+	#deletar-conta {  padding: 2% 4%; }
+	#content-agendar {  width: 80%;  }
+}
+
+@media screen and (max-width:480px){
+	.menu-item { display: none; }
+	.menu-side { display: inline-block; }
+	
+	#content-login { width: 65%;  }
+	#content-cadastrar { width: 65%; }
+
+	/*logo*/
+	.photo-thumb { margin-top: 16%; }
+
+	/*info content*/
+	.info-content { width: 90%; margin-left: 5%; }
+	
+	#content-cadastrar-email input[type="email"] { width: 100%; }
+	#content-cadastrar-email input[type="submit"] { width: 30%; padding: 9px 0; margin-top: 2%; }
+	
+	#ambiente { width: 90%; }
+	#ambiente img { width: 80%; margin: 2% auto 0; }
+
+	#nossa-equipe .photo { width: 50%; }
+	
+	#contato { width: 100%; }
+
+	/*perfil*/
+	#perfil-info { margin-top: 10%; }
+}
+
+/*class*/
+.content-fullscreen {  width: 100%; height: 100%; position: fixed; top: 0; background-color: rgba(0, 0, 0, .9); z-index: 3;  }
+.popup-content { display: block; background: #fff; box-shadow: 1px 1px 2px #ccc; padding: 2% 2%;  }
+.popup-content-title { font-size: 1.5em; text-align: center; display: block; font-color: #212121; }
+.popup-content-close { color: #212121; font-size: 2em; float: right; margin-right: 1%; text-decoration: none; display: block; top: 0; }
+
+.input-text { width: 100%; padding: 2% 0px; box-shadow: 0px 1px 2px #ccc; border: 0;  }
+
+/* menu */
+nav.menu { z-index: 1; position: fixed; top: 0; width: 100%; box-shadow: 1px 1px 7px #6E6D6C; background-color: #FFF; }
+nav.menu li { list-style-type: none; padding: 4px 10px; }
+nav.menu a { color: #000; text-decoration: none; }
+nav.menu a:hover { border-bottom: 2px solid #5c88ce; }
+#menu-login { float: right; }
+#menu-cadastrar { float: right; }
+
+/*logo*/
+#logo-content img { width: 40%; display: block; margin: 0 auto; }
+#logo-content { display: block; }
+
+/* side nav */
+.sidenav { display: none; position: fixed; width: 100%; height: 100%; background: rgba(0, 0, 0, .9); z-index: 2; }
+.sidenav ul { padding: 0; margin: 0; margin-top: 15%; }
+.sidenav li { width: 100%; text-align: center; list-style-type: none; margin-top: 3%;}
+.sidenav li:hover a { border: 2px solid #216596; }
+.sidenav li a { color: #FFF; font-size: 1.5em; text-decoration: none; padding: 4px 10px;}
+#closeButton { font-size: 2em; color: #FFF; float: right; margin-right: 2%; text-decoration: none; padding: 0 2%; margin-top: 1%;}
+#closeButton:hover { border-radius: 50%; border: 2px solid #216596; color: #216596;}
+
+
+/*login*/
+#content-login { opacity: 0; margin: 2% auto 0; background: #fff; box-shadow: 1px 1px 2px #ccc; padding: 2% 2%;  }
+#content-login form { width: 100%; }
+#content-login #title { margin-top: 2%; }
+#content-login #close { margin-top: -4%; }
+#content-login label { margin-top: 6%; display: block; }
+#content-login input { display: block; }
+#content-login input[type="submit"] { padding: 3% 12%; background-color: rgb(22, 90, 135); color: #fff; margin-top: 2%; border: 0; }
+
+#warning { font-size: 1.1em; color: #F00; }
+
+/*cadastrar*/
+#content-cadastrar { opacity: 0; margin: 2% auto 0; background: #fff; box-shadow: 1px 1px 2px #ccc; padding: 2% 2%; }
+#content-cadastrar form { width: 100%;   }
+#content-cadastrar label { margin-top: 6%; display: block; }
+#content-cadastrar input { display: block; }
+#content-cadastrar input[type="submit"] { padding: 3% 12%; background-color: rgb(22, 90, 135); color: #fff; margin-top: 2%; border: 0; }
+
+/*thumb*/
+.photo-thumb { width: 100%; }
+
+/*info content*/
+.info-content { margin-top: 2%; display: inline-block; border-radius: 10px; border-bottom: 2px solid #68abb7; padding: 6px 0; }
+.info-content a.title { font-size: 1.3em; font-family: 'Open Sans', sans-serif; font-weight: 300; display: block; text-align: center; }
+.info-content a.description { width: 90%; margin: 0 auto; font-size: 1em; color: #7c7c7c; text-align: justify; display: block; }
+.info-content img { width: 100%; border-radius: 10px; }
+.info-content .icon { font-size: 3em; color: #639ba5; text-align: center; margin: 0 auto; display: block; }
+
+/*cadastrar email*/
+#content-cadastrar-email { padding: 10px; background-color: #115F70; margin-top: 3%; }
+#content-cadastrar-email #title { font-size: 1.3em; text-align: center; display: block; margin: 0 auto; color: #fff; }
+#content-cadastrar-email #description { font-size: 1em; text-align: center; display: block; margin: 2px auto; color: #e5e5e5; }
+#content-cadastrar-email form { padding: 0; width: 100%; }
+#content-cadastrar-email input[type="email"] { font-size: 1em; padding: 4px 1px; margin-top: 1%; border: 1px solid #ccc; box-shadow: 0px 1px 6px #ccc; }
+#content-cadastrar-email input[type="submit"] { background-color: #fff; color: #262625; border: 0; border-radius: 6px;}
+
+/*ambiente*/
+#ambiente {  display: block; margin: 4% auto 0; }
+#ambiente .title { font-size: 1.5em; color: #2E2D2D; text-align: center; display: block; }
+#ambiente .description { font-size: 1em; color: #707070; text-align: justify; display: block; margin-top: 1%; }
+#ambiente img { display: inline-block; }
+
+/*nossa equipe*/
+#nossa-equipe { display: block; margin-top: 4%; box-shadow: 1px 0px 5px #ccc; padding-top: 3%; }
+#nossa-equipe .title { font-size: 1.5em; color: #2E2D2D; text-align: center; display: block; }
+#nossa-equipe .content { margin-top: 3%; display: inline-block; }
+#nossa-equipe .photo { border-radius: 50%; display: block; margin: 0 auto;}
+
+/*contato*/
+#contato { margin-top: 3%; /*background-color: #115F70;*/ padding: 2% 0; }
+#contato .title { font-size: 1.5em; color: #000; text-align: center; display: block; }
+#contato form { width: 90%; display: block; margin: 2% auto 0; }
+#contato label, #contato input, #contato textarea { display: block; }
+#contato label { color: #2E2E2E; opacity: .99; margin-top: 2%; }
+#contato input[type="text"], #contato input[type="email"], #contato textarea { width: 100%; border: 1px solid #ccc; padding: 2% 0;}
+#contato input[type="submit"] { padding: 2% 10%; margin-top: 2%; background-color: #115F70; color: #FFF; border: 0; border-radius: 6px; }
+/*footer*/
+footer { display: block; clear: both; background-color: #000; margin-top: 8%; text-align: center; padding: 14px;}
+footer a { color: #fff; text-align: center; }
