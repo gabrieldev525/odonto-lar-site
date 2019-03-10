@@ -44,7 +44,7 @@
 					}
 
 				if(!isset($_COOKIE["app"])) {
-				  echo '<li class="menu-side"><img src="images/sidenav_ic_gray.png" onclick="showSidenav();"></li>';
+				  echo '<li class="menu-side"><i class="fas fa-bars" onclick="showSidenav();"></i></li>';
 			    } else {
 				  echo '<li id="menu-cadastrar"><a href="logout.php">Sair</a></li>';
 				}

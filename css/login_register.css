@@ -1,12 +1,31 @@
 body, html { margin: 0; height: 100%; padding: 0; background-image: linear-gradient(to bottom right, rgb(56, 172, 162), rgb(25, 151, 160)) }
 * { font-family: sans-serif; }
+
+@media screen and (min-width: 721px) {
+    .content { width: 20%; }
+    
+    #warning {  width: 20%; }
+} 
+
+@media screen and (max-width: 720px) {
+    .content { width: 50%; }
+
+    #warning {  width: 20%; }
+}
+
+@media screen and (max-width: 480px) {
+    .content { width: 70%; }
+
+    #warning { width: 90%; }
+}
+
 /* the main content */
-.content { background-color: #fff; padding: 2%; border-radius: 24px; width: 20%; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.content { background-color: #fff; padding: 2%; border-radius: 24px; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
 /* title */
 .title { font-size: 1.5em; display: block; text-align: center; margin-bottom: 5%; }
 
-#warning { transition: 0.5s; animation: warning 2s; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 20%; background-color: #fff; border-bottom-right-radius: 24px; border-bottom-left-radius: 24px; color: rgb(238, 61, 61); text-align: center; font-size: 1.2em; padding: 1.4%; }
+#warning { transition: 0.5s; animation: warning 2s; position: absolute; top: 0; left: 50%; transform: translateX(-50%); background-color: #fff; border-bottom-right-radius: 24px; border-bottom-left-radius: 24px; color: rgb(238, 61, 61); text-align: center; font-size: 1.2em; padding: 1.4%; }
 @keyframes warning {
     0% {
         top: -100%;

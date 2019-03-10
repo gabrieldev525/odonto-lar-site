@@ -13,9 +13,11 @@ $(window).on("scroll", function() {
 	if(y >= $(window).height() / 3) {
 			$(".menu").addClass("menu-style");
 			$(".menu a").css("color", "#1c1c1c");
+			$(".menu-side").css("color", "#1c1c1c");
 	} else {
 			$(".menu").removeClass("menu-style");
 			$(".menu a").css("color", "#fff");
+			$(".menu-side").css("color", "#fff");
 	}
 });
 
@@ -90,14 +92,14 @@ function cancelarConsulta(index) {
 		if(listConsultas.length > 0) {
 			if(listConsultas.indexOf(index) == -1) {
 				listConsultas.push(index);
-				$("tr#" + (parseInt(index))).css("background-color", "#94b0dd");
+				$("tr#" + (parseInt(index))).css("background-color", "#e2e2e2");
 			} else {
 				listConsultas.splice(listConsultas.indexOf(index), 1);
 				$("tr#" + (parseInt(index))).css("background-color", "#FFFFFF");
 			}
 		} else {
 			listConsultas.push(index);
-			$("tr#" + (parseInt(index))).css("background-color", "#94b0dd");
+			$("tr#" + (parseInt(index))).css("background-color", "#e2e2e2");
 		}
 	}
 }

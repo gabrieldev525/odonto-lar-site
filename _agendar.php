@@ -28,15 +28,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>clinica odontologica - agendar</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/perfil.css">
+		<link rel="stylesheet" type="text/css" href="css/agendar.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	</head>
 	<body>
 		<div id="content-agendar">
-		<a id="title" class="popup-content-title">Agendar consulta</a>
+		<a class="title" class="popup-content-title">Agendar consulta</a>
 
 
 		<form action="agendar.php" method="post">

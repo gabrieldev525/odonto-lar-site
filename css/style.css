@@ -1,12 +1,9 @@
 body, html { margin: 0; height: 100%; box-sizing: border-box; }
 * { font-family: sans-serif; }
 
-@media screen and (min-width:1200px){
+@media screen and (min-width:721px){
 	.menu-item { display: inline-block; }
 	.menu-side { display: none; }
-	
-	#content-login { width: 30%; }
-	#content-cadastrar { width: 30%; }
 	
 	/*info content*/
 	.info-content { width: 35%; margin: 2%; }
@@ -14,7 +11,7 @@ body, html { margin: 0; height: 100%; box-sizing: border-box; }
 	.info-content a.description { margin: 2% auto; }
 	 
 	#content-cadastrar-email input[type="email"] { width: 70%; }
-	#content-cadastrar-email input[type="submit"] { width: 28%; padding: 9px 0; }
+	#content-cadastrar-email input[type="submit"] { width: 28%; padding: 9px 0; margin: 1% auto 0; }
 	
 	#ambiente { width: 60%; }
 	#ambiente .description { width: 60%; margin: 1% auto 0; }
@@ -33,44 +30,15 @@ body, html { margin: 0; height: 100%; box-sizing: border-box; }
 	#content-agendar {  width: 30%;  }
 }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:720px) {
 	.menu-item { display: inline-block; }
 	.menu-side { display: none; }
-	
-	#content-login { width: 30%; }
-	#content-cadastrar { width: 30%; }
-	
-	/*info content*/
-	.info-content { width: 40%; margin-left: 6.5%; }
-	
-	#content-cadastrar-email input[type="email"] { width: 70%; }
-	#content-cadastrar-email input[type="submit"] { width: 28%; padding: 9px 0; }
-	
-	#ambiente { width: 60%; }
-	#ambiente img { width: 40%; margin: 2% 6% 0 0; }
-	
-	#nossa-equipe .content { margin-left: 1.67%; width: 30%; }
-	#nossa-equipe .photo { width: 50%; }
-	
-	#contato { width: 70%; margin: 3% auto 0; }
 
-	/*perfil*/
-	#perfil-info { width: 30%; float: left;  }
-	#agendamentos { width: 60%;  float: right;  }
-	#perfil-icon { width: 40%; }
-	#deletar-conta {  padding: 4% 6%; }
-	#content-agendar {  width: 50%;  }
-}
-
-@media screen and (max-width:768px) {
-    #content-login { width: 50%; }
-	#content-cadastrar { width: 40%; }
-	
     /*info content*/
-	.info-content { width: 40%; margin-left: 6.5%; }
+	.info-content { width: 80%; margin-top: 3%; }
 	
-	#content-cadastrar-email input[type="email"] { width: 70%; }
-	#content-cadastrar-email input[type="submit"] { width: 28%; padding: 9px 0; }
+	#content-cadastrar-email input[type="email"] { width: 100%; }
+	#content-cadastrar-email input[type="submit"] { width: 40%; padding: 4%; margin: 4% auto 0; }
 	
 	#ambiente { width: 80%; }
 	#ambiente img { width: 40%; margin: 2% 6% 0 0; }
@@ -91,18 +59,15 @@ body, html { margin: 0; height: 100%; box-sizing: border-box; }
 @media screen and (max-width:480px){
 	.menu-item { display: none; }
 	.menu-side { display: inline-block; }
-	
-	#content-login { width: 65%;  }
-	#content-cadastrar { width: 65%; }
 
 	/*logo*/
 	.photo-thumb { margin-top: 16%; }
 
 	/*info content*/
-	.info-content { width: 90%; margin-left: 5%; }
+	.info-content { width: 90%; margin-top: 2%;  }
 	
 	#content-cadastrar-email input[type="email"] { width: 100%; }
-	#content-cadastrar-email input[type="submit"] { width: 30%; padding: 9px 0; margin-top: 2%; }
+	#content-cadastrar-email input[type="submit"] { width: 50%; padding: 5%; margin: 3% auto 0; }
 	
 	#ambiente { width: 90%; }
 	#ambiente img { width: 80%; margin: 2% auto 0; }
@@ -125,6 +90,7 @@ body, html { margin: 0; height: 100%; box-sizing: border-box; }
 
 /* menu */
 .menu-style { background-color: #fff; box-shadow: 1px 1px 4px #ccc; }
+.menu-side { color: #fff; font-size: 1.4em; cursor: pointer;}
 nav.menu { transition: 0.5s; z-index: 1; position: fixed; top: 0; width: 100%;   }
 nav.menu li {  list-style-type: none; padding: 4px 10px; }
 nav.menu a { transition: 0.25s; padding-bottom: 10%; color: #fff; text-decoration: none; }
@@ -137,11 +103,11 @@ nav.menu a:hover {  border-bottom: 2px solid #5c88ce; }
 #logo-content { display: block; }
 
 /* side nav */
-.sidenav { display: none; position: fixed; width: 100%; height: 100%; background: rgba(0, 0, 0, .9); z-index: 2; }
+.sidenav { display: none; top: 0; position: fixed; width: 100%; height: 100%; background: rgba(0, 0, 0, .9); z-index: 2; }
 .sidenav ul { padding: 0; margin: 0; margin-top: 15%; }
 .sidenav li { width: 100%; text-align: center; list-style-type: none; margin-top: 3%;}
 .sidenav li:hover a { border: 2px solid #216596; }
-.sidenav li a { color: #FFF; font-size: 1.5em; text-decoration: none; padding: 4px 10px;}
+.sidenav li a { transition: 0.5s; color: #FFF; font-size: 1.5em; text-decoration: none; padding: 4px 10px;}
 #closeButton { font-size: 2em; color: #FFF; float: right; margin-right: 2%; text-decoration: none; padding: 0 2%; margin-top: 1%;}
 #closeButton:hover { border-radius: 50%; border: 2px solid #216596; color: #216596;}
 
@@ -162,7 +128,7 @@ nav.menu a:hover {  border-bottom: 2px solid #5c88ce; }
 #servicos { display: flex; justify-content: center; flex-direction: row; flex-wrap: wrap; }
 .info-content { border-radius: 24px;  padding: 2% 0; box-shadow: 1px 1px 5px #115F70; }
 .info-content a.title { font-size: 1.5em;  font-weight: 500; display: block; text-align: center; }
-.info-content a.description { width: 80%;  font-size: 1em; color: #7c7c7c; text-align: justify; display: block; }
+.info-content a.description { width: 80%;  font-size: 1em; color: #7c7c7c; text-align: justify; margin-left: auto; margin-right: auto; display: flex; justify-self: center; }
 .info-content img { width: 100%; border-radius: 10px; }
 .info-content .icon { font-size: 4em; color: #639ba5; text-align: center; margin: 0 auto; display: block; }
 
@@ -173,7 +139,7 @@ nav.menu a:hover {  border-bottom: 2px solid #5c88ce; }
 #content-cadastrar-email form { padding: 0; width: 50%; display: block; margin: 2% auto 0; }
 #content-cadastrar-email input[type="email"] { transition: 0.5s; color: #fff; text-align: center; outline: none; display: block; font-size: 1em; padding: 1.4% 0; margin: 1% auto 0; border: 2px solid #fff; background: transparent; border-radius: 24px; }
 #content-cadastrar-email input[type="email"]:focus { border: 2px solid #f5ec73; }
-#content-cadastrar-email input[type="submit"] { transition: 0.5s; background-color: #204966; cursor: pointer; color: #fff; font-size: 1em; display: block; margin: 1% auto 0; border: 0; border-radius: 24px;}
+#content-cadastrar-email input[type="submit"] { transition: 0.5s; background-color: #204966; cursor: pointer; color: #fff; font-size: 1em; display: block;  border: 0; border-radius: 24px;}
 #content-cadastrar-email input[type="submit"]:hover { background-color: #f5ec73; color: #2E2D2D; }
 /*ambiente*/
 #ambiente {  display: block; margin: 4% auto 0; }
@@ -200,5 +166,5 @@ nav.menu a:hover {  border-bottom: 2px solid #5c88ce; }
 #contato input[type="submit"] { cursor: pointer; transition: 0.5s; padding: 2% 10%; margin: 2% auto 0; background-color: #115F70; color: #FFF; border: 0; border-radius: 24px; }
 #contato input[type="submit"]:hover { background-color: #0791a7; }
 /*footer*/
-footer { display: block; clear: both; background-color: #0791a7; margin-top: 1%; text-align: center; padding: 2% 0;}
+footer { display: block; clear: both; background-color: #0791a7; margin-top: 1%; text-align: center; padding: 2%;}
 footer a { color: #fff; text-align: center; }

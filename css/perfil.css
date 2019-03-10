@@ -1,27 +1,59 @@
 .title { font-size: 1.5em; text-align: center; display: block; font-weight: 700; }
 
-#interface { margin-top: 8%; }
+@media screen and (min-width: 721px) {
+    #interface { margin-top: 10%; }
+
+    #popup-delete-acount .content { width: 40%; }
+}
+
+@media screen and (max-width: 720px) {
+    #interface { margin-top: 15%; }
+
+    #popup-delete-acount .content { width: 60%; }
+}
+
+@media screen and (max-width: 480px) {
+    #interface { margin-top: 15%; }
+
+    #popup-delete-acount .content { width: 80%; }
+}
+
+
 
 .menu { background-image: linear-gradient(to bottom right, #159dff, #0791a7); }
 
 /*table*/
 .main-table { border: 1px solid #ccc; width: 100%; border-spacing: 0; margin-top: 2%; }
-.main-table td, .main-table tr { border: 1px solid #ccc; border-spacing: 0; text-align: center; }
+.main-table td, .main-table tr { font-size: 1em; cursor: pointer; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; border-spacing: 0; text-align: center; }
+.main-table tr:first-child { background-color: #0791a7; color: #fff; }
 .main-table td { padding: 1% 0; }
 
 /*delete acount alert*/
 #popup-delete-acount { width: 100%; height: 100%; position: fixed; top: 0; background-color: rgba(0, 0, 0, .9); z-index: 3; display: none; }
-#popup-delete-acount .content { width: 60%; margin: 2% auto 0; display: block; background: #fff; box-shadow: 1px 1px 2px #ccc; padding: 2% 2%; }
+#popup-delete-acount .content { animation: delete-account 1.5s; border-radius: 24px; margin: 2% auto 0; display: block; background: #fff; box-shadow: 1px 1px 2px #ccc; padding: 2% 2%; }
+@keyframes delete-account {
+    0% {
+        margin: -100% auto 0;
+    }
+    50% {
+        margin: 2% auto 0;
+    }
+}
 #popup-delete-acount .title { font-size: 1.1em; text-align: center; display: block; font-color: #212121; }
 #popup-delete-acount #buttons { margin-top: 2%; }
-#popup-delete-acount #yes { background-color: #13B2C5; color: #FFF;  }
-#popup-delete-acount #no { background-color: #C51313; color: #FFF;  }
+#popup-delete-acount #yes { border-radius: 24px; background-color: #13B2C5; color: #FFF;  }
+#popup-delete-acount #no { border-radius: 24px; background-color: #C51313; color: #FFF;  }
 
 /*perfil info*/
 #perfil-info { box-shadow: 0px 1px 7px #ccc; padding: 1%; }
 #perfil-info .main-table td:first-child { font-weight: 600; font-size: 1.1em; }
-.button-table { cursor: pointer; display: inline-block; margin: 3% 1%; background-color: #C51313; color: #FFF; }
-#deletar-conta {  }
+.button-table { transition: 0.5s; cursor: pointer; display: inline-block; margin: 3% 1%;  color: #FFF; }
+#deletar-conta { outline: none; border-radius: 24px; background-color: #C51313; }
+#deletar-conta:hover { background-color: rgb(122, 32, 32); } 
+
+/*ADM buttons*/
+#cadastrar-medico { outline: none; border-radius: 24px; background-color: #13B2C5; padding: 4% 6%; }
+#cadastrar-medico:hover { background-color: rgb(13, 121, 133); }
 #perfil-icon { border-radius: 50%; display: block; margin: 1% auto 0;}
 
 /*agendamentos*/
@@ -31,23 +63,14 @@
 /*buttons on table */
 #agendamento-buttons { display: block; margin-top: 3%; }
 .button-table { padding: 2% 4%; border: 0; }
-#agendar-consulta { cursor: pointer; background-color: #13B2C5; color: #FFF; } /* #13C51A */
-#cancelar-consulta { cursor: pointer; background-color: #C51313; color: #FFF; }
+#agendar-consulta { outline: none; border-radius: 24px; cursor: pointer; transition: 0.5s; background-color: #13B2C5; color: #FFF; } /* #13C51A */
+#agendar-consulta:hover { background-color: rgb(12, 119, 131); }
+#cancelar-consulta { outline: none; border-radius: 24px; cursor: pointer; background-color: #C51313; color: #FFF; }
+#cancelar-consulta:hover { background-color: rgb(122, 32, 32); } 
 
 #back-doctor-adm { background-color: #13B2C5; color: #FFF; }
 
 /*cancelamento*/
-#cancelamento-buttons { display: none; margin-top: 3%; }
-#cancelamento-buttons #cancelar { background-color: #13B2C5; color: #FFF; }
-#cancelamento-buttons #sair { background-color: #C51313; color: #FFF; }
-
-/*ADM buttons*/
-#cadastrar-medico { background-color: #13B2C5; color: #FFF; margin-top: 3%; padding: 4% 6%; }
-
-
-/*agendar popup*/
-#content-agendar {margin: 2% auto 0; background: #fff; box-shadow: 1px 1px 2px #ccc; padding: 2% 2%; }
-#content-agendar form { width: 100%; }
-#content-agendar label { margin-top: 4%; display: block; }
-#content-agendar select { display: block; width: 100%; margin: 0 auto; border: 1px solid #ccc; margin-top: 2%; }
-#content-agendar input[type="submit"] { padding: 3% 12%; background-color: rgb(22, 90, 135); color: #fff; margin-top: 2%; border: 0; }
+#cancelamento-buttons {  display: none; margin-top: 3%; }
+#cancelamento-buttons #cancelar { border-radius: 24px; background-color: #13B2C5; color: #FFF; }
+#cancelamento-buttons #sair { border-radius: 24px; background-color: #C51313; color: #FFF; }
