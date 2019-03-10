@@ -14,30 +14,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>clinica odontologica - cadastrar</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/login_register.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	</head>
 	<body>
-			<div id="content-cadastrar">
-				<a id="title" class="popup-content-title">Cadastrar</a>
+			<div class="content">
+				<a class="title" class="popup-content-title">Cadastrar</a>
 			    <?php
 			    	echo '<a id="warning" class="popup-content-title">' . $message . '</a>';
 			    ?>
 
 			    <form action="cadastrar.php" method="post">
-					<label for="nome">Nome:</label>
-					<input type="text" name="nome" class="input-text" id="nome-cadastrar">
-
-					<label for="email">Email:</label>
-					<input type="email" name="email" class="input-text" id="email-cadastrar">
-
-					<label for="senha">Senha:</label>
-					<input type="password" name="senha" class="input-text" id="senha-cadastrar">
-
-					<label for="senha">Comfirme sua senha:</label>
-					<input type="password" name="senha" class="input-text" id="comfirm-senha-cadastrar">
+					<input type="text" name="nome" class="input-text" id="nome-cadastrar" placeholder="Nome">
+					<input type="email" name="email" class="input-text" id="email-cadastrar" placeholder="Email">
+					<input type="password" name="senha" class="input-text" id="senha-cadastrar" placeholder="Senha">
+					<input type="password" name="senha" class="input-text" id="comfirm-senha-cadastrar" placeholder="Comfirme sua senha">
 
 					<?php
 						echo '<input type="hidden" name="status" value="' . $status . '">';

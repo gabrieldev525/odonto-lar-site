@@ -5,6 +5,20 @@ function hideSidenav() {
 	$(".sidenav").hide();
 }
 
+$(window).on("scroll", function() {
+	var y = $(window).scrollTop();
+
+	//alert("ola");
+
+	if(y >= $(window).height() / 3) {
+			$(".menu").addClass("menu-style");
+			$(".menu a").css("color", "#1c1c1c");
+	} else {
+			$(".menu").removeClass("menu-style");
+			$(".menu a").css("color", "#fff");
+	}
+});
+
 $("#agendar-consulta").click(function() {
 	var query = window.location.search.substring(1);
 	var qs = getUrlParams(query);

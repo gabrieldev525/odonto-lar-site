@@ -12,24 +12,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>clinica odontologica - login</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/login_register.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	</head>
 	<body>
-		<div id="content-login">
-				<a id="title" class="popup-content-title">Login</a>
+		<div class="content">
+				<a class="title" class="popup-content-title">Login</a>
 				<?php
 			    	echo '<a id="warning" class="popup-content-title">' . $message . '</a>';
 			    ?>
 			     <form action="login.php" method="post">
-					<label for="email">Email:</label>
-					<input type="email" name="email" class="input-text" id="email-logar">
-
-					<label for="senha">Senha:</label>
-					<input type="password" name="senha" class="input-text" id="senha-logar">
-
+					<input type="email" name="email" class="input-text" id="email-logar" placeholder="Email">
+					<input type="password" name="senha" class="input-text" id="senha-logar" placeholder="Senha">
 					<input type="submit" value="logar" onclick="return logarEmpty();">
 				</form>	
 			</div>
