@@ -6,8 +6,18 @@ body, html { margin: 0; height: 100%; padding: 0; background-image: linear-gradi
 /* title */
 .title { font-size: 1.5em; display: block; text-align: center; margin-bottom: 5%; }
 
+#warning { transition: 0.5s; animation: warning 2s; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 20%; background-color: #fff; border-bottom-right-radius: 24px; border-bottom-left-radius: 24px; color: rgb(238, 61, 61); text-align: center; font-size: 1.2em; padding: 1.4%; }
+@keyframes warning {
+    0% {
+        top: -100%;
+    }
+
+    50% {
+        top: 0%;
+    }
+}
 form { width: 100%; }
-form input { display: block;}
+form input { display: block; outline: none;}
 form input[type=text], form input[type=email], form input[type=password] { transition: 0.5s; width: 100%; padding: 3% 0; margin: 2% 0; text-align: center; border: 2px solid #ccc; outline: none; border-radius: 24px; }
 form input[type=text]:focus, form input[type=email]:focus, form input[type=password]:focus { border: 2px solid rgb(25, 151, 160); }
 form input[type=submit] { transition: 0.5s; display: block; margin: 5% auto 0; width: 50%; background-color: rgb(25, 151, 160); cursor: pointer; color: #fff; padding: 4%; border-radius: 24px; border: 0; }

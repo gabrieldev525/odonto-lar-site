@@ -200,5 +200,5 @@ nav.menu a:hover {  border-bottom: 2px solid #5c88ce; }
 #contato input[type="submit"] { cursor: pointer; transition: 0.5s; padding: 2% 10%; margin: 2% auto 0; background-color: #115F70; color: #FFF; border: 0; border-radius: 24px; }
 #contato input[type="submit"]:hover { background-color: #0791a7; }
 /*footer*/
-footer { display: block; clear: both; background-color: #000; margin-top: 1%; text-align: center; padding: 2% 0;}
+footer { display: block; clear: both; background-color: #0791a7; margin-top: 1%; text-align: center; padding: 2% 0;}
 footer a { color: #fff; text-align: center; }

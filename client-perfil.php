@@ -47,24 +47,10 @@
 	<div id="interface">
 	  <!-- perfil informations -->
 	  <div id="perfil-info">
-		<a class="title">Perfil</a>
+		<a class="title"><?php print($_SESSION["name"]);?></a>
 		<img src="images/profile-icon.png" id="perfil-icon">
 		
-		<!-- table info -->
-		<table class="main-table">
-		  <tr>
-			<td>Nome: </td>
-			<?php
-				print("<td>" . $_SESSION["name"] . "</td>");
-			?>
-		  </tr>
-		  <tr>
-			<td>Email: </td>
-			<?php
-				print("<td>" . $_SESSION["email"] . "</td>");
-			?>
-		  </tr>
-		</table>
+		
 		
 		<?php
 			echo '<button class="button-table" id="deletar-conta">Deletar conta</button>';

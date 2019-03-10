@@ -1,7 +1,7 @@
 <?php
 	session_start();
 
-	$message = isset($_SESSION["message"]) ? $_SESSION["message"] : "";
+	$message = isset($_SESSION["message"]) ? $_SESSION["message"] : null;
 ?>
 
 <!DOCTYPE html>
@@ -18,11 +18,13 @@
 		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	</head>
 	<body>
+		<?php
+			if($message != null)
+				echo '<a id="warning" class="popup-content-title">' . $message . '</a>';
+		?>
 		<div class="content">
 				<a class="title" class="popup-content-title">Login</a>
-				<?php
-			    	echo '<a id="warning" class="popup-content-title">' . $message . '</a>';
-			    ?>
+				
 			     <form action="login.php" method="post">
 					<input type="email" name="email" class="input-text" id="email-logar" placeholder="Email">
 					<input type="password" name="senha" class="input-text" id="senha-logar" placeholder="Senha">
