@@ -9,9 +9,6 @@
 	
 	require_once("connection.php");
 	
-	//make connection with mysqli db server
-	$conn = mysqli_connect($my_host, $my_user, $my_password, $my_db) or die ("failed to connect");
-	
 	//protect mysql injection
 	/*$name = mysql_real_scape_string($conn, $name);
 	$email = mysql_real_scape_string($conn, $email);
@@ -37,7 +34,7 @@
 		//level 3 - admin
 		
 		//add a row to table
-		$query = "INSERT INTO usuarios(nome, email, senha, status) VALUES ('$name', '$email', '$senha', '$status')";
+		$query = "INSERT INTO usuarios(name, email, password, status) VALUES ('$name', '$email', '$senha', '$status')";
 		
 		$result = mysqli_query($conn, $query);
 

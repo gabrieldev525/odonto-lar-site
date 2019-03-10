@@ -20,7 +20,7 @@
 		*/
 
 		//query
-		$query = "SELECT * FROM usuarios WHERE email='$email' AND senha='" . $senha . "'";
+		$query = "SELECT * FROM usuarios WHERE email='$email' AND password='" . $senha . "'";
 		
 		$result = mysqli_query($conn, $query);
 		
